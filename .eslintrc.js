@@ -1,4 +1,5 @@
 const { rules } = require("eslint-config-prettier");
+const { off } = require("process");
 
 module.exports = {
   root: true,
@@ -7,5 +8,7 @@ module.exports = {
   plugins: ['prettier'],
   rules:{
     'prettier/prettier' : ['error', {endOfLine : 'auto'}],
+    'no-console':'off', 
+
   }
 }
